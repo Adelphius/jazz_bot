@@ -7,7 +7,8 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     bee=msg+"";
-  if (bee.indexOf('bee')){
+    bee=bee.toLocaleLowerCase();
+  if (bee.indexOf('bee')!= -1){
     msg.reply('Ya like jazz?');
   } 
 });
